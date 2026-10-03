@@ -1,0 +1,6 @@
+build/artifacts/
+build/work-wsl/
+build/__pycache__/
+*.zip
+*.tar.gz
+.DS_Store

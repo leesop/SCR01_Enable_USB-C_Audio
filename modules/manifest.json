@@ -1,0 +1,48 @@
+{
+  "device": "SCR01",
+  "firmware": "SCR01KDU1AVK2",
+  "kernel": "4.14.186-24165939",
+  "architecture": "aarch64",
+  "source_archive": "SM-H412J_SCR01KDU1AVK2_Kernel.tar.gz",
+  "source_sha256": "7f0ca9c6e04e7653e2f339b2f8822178d30915b7542ba5bf55c5636e034a173d",
+  "modules": [
+    {
+      "name": "snd_hwdep",
+      "license": "GPL",
+      "depends": "",
+      "vermagic": "4.14.186-24165939 SMP preempt mod_unload modversions aarch64",
+      "srcversion": "5CEE967F6E4284C0B6BB7BB",
+      "file": "modules/snd-hwdep.ko",
+      "size": 324344,
+      "sha256": "b004949394a237a1705c110c1cb5024f4a4d4b541f74c9a3d76522a81d883d1c"
+    },
+    {
+      "name": "snd_usb_audio",
+      "license": "GPL",
+      "depends": "snd-hwdep,snd-usbmidi-lib",
+      "vermagic": "4.14.186-24165939 SMP preempt mod_unload modversions aarch64",
+      "srcversion": "0E3B84087B3141862ED9CA3",
+      "file": "modules/snd-usb-audio.ko",
+      "size": 2614624,
+      "sha256": "1371dcbcbc2d40b804c0cd1a6d57f1d5ca4acb566a6b4bcc5efcb6172061c5c9"
+    },
+    {
+      "name": "snd_usbmidi_lib",
+      "license": "Dual BSD/GPL",
+      "depends": "",
+      "vermagic": "4.14.186-24165939 SMP preempt mod_unload modversions aarch64",
+      "srcversion": "8C9725D3548152A36FDDBAA",
+      "file": "modules/snd-usbmidi-lib.ko",
+      "size": 321432,
+      "sha256": "a351409717faa04147418743c0c9832b31ef3969188a5438901e039f0a99f13a"
+    }
+  ],
+  "runtime_validation": {
+    "date": "2026-10-03",
+    "dac": "Apple USB-C to 3.5mm Headphone Jack Adapter",
+    "playback": "48 kHz / 24-bit packed / stereo, ALSA RUNNING, audible playback confirmed",
+    "root_environment": "SCRoot / KernelSU Next; SELinux Permissive",
+    "capture": "Device registration only; microphone recording not tested"
+  },
+  "build_note": "Binaries supplied by the user after building the Samsung source. The published recipe was reviewed; a fresh rebuild was not independently repeated."
+}
